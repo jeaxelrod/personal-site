@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>About Jeremy</title>
+		<link rel="stylesheet" href="about.css" type="text/css">
+	</head>
+	
+	<body>
+		<% if @current_user %>
+			<%= render 'shared/admin_header' %>
+		<% end %>
+		<header id="header">
+			<div  id="logo">
+				<a href="home.html">
+				</a>
+			</div>
+			<nav id="navagation">
+				<a href="about.html">About</a>
+				<a href="#">My Process</a>
+				<a href="#">Blog</a>
+				<a id="blog" href="#">Contact</a>
+			</nav>
+		</header>
+		
+		<div class="content">
+			<h1>Hi! I'm Jeremy</h1>
+			<div class="left">
+				<div class="pic">
+				</div>
+				<h2>Myself</h2>
+				<p> 
+					I love the internet, and I want to make it even better, so I make useful websites that are easy to use and frustration-free. I use my experience in neuroscience and education by implementing the methods of human-centered design to create the best experience. 
+				</p>
+			</div>	
+			<div class="center">
+				<div class="pic">
+				</div>
+				<h2>Developer</h2>
+				<p> 
+					I have experience using python, java, javascript, ruby, html, and css. I construct the majority of my websites using rails and behavior driven testing using rspec. I am interested in all of the components invovled in a website, including front-end, back-end, security, performance, and testing.
+				</p>
+			</div>
+			<div class="right">
+				<div class="pic">
+				</div>
+				<h2>Designer</h2>
+				<p> 
+					I design always with the user in mind. I make my apps intuitive to use, using already existing practices and proper information organization.
+				</p>
+			</div>
+		</div>
+		
+	</body>
+</html>
