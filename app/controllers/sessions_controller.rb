@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
 		if admin && admin.authenticate(params["password"])
 			session[:admin_id] = admin.id
 			self.current_user = admin
-			render 'static_pages/home'
+			redirect_to ''
 		else
 			render 'new'
 		end 	
@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
 	
 	def destroy
 		reset_session
-		render 'static_pages/home'
+		redirect_to :back
 	end
 	
 	private

@@ -1,0 +1,23 @@
+<% if @current_user %>
+	<%= render 'shared/admin_header' %>
+<% end %>
+
+<%= render 'shared/header' %>
+
+<div class="introduction">
+	<h1>Blog</h1>
+</div>
+
+<div class="contents">
+	<% for blog in @blogs do %>
+		<div class="blog-<%= blog.id %>">
+			<h2><%= blog.title %></h2>
+			<div class="blog-content">
+				<p><%= blog.contents %></p>
+			</div>
+			<%= link_to "Comments", '#' %>
+			<p><%= blog.tags %></p>
+		</div>
+	<% end %>
+	
+</div>
