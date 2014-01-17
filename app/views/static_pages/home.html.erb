@@ -1,51 +1,29 @@
-<!DOCTYPE html>
+<% if @current_user %>
+	<%= render 'shared/admin_header' %>
+<% end %>
 
-<html>
-	<head>
-		<title>Jeremy Axelrod</title>
-		<link rel="stylesheet" href="home.css" type="text/css">
-	</head>
+<%= render 'shared/header' %>
 
-	<body>
-		<% if @current_user %>
-			<%= render 'shared/admin_header' %>
-		<% end %>
-		<header id="header">
-			<div  id="logo">
-				<a href="home.html">
-				</a>
-			</div>
-			<nav id="navagation">
-				<a href="about.html">About</a>
-				<a href="#">My Process</a>
-				<a href="#">Blog</a>
-				<a href="#">Contact</a>
-			</nav>
-		</header>
-		
-		<div id="introduction">
-			<h1>Web Developer</h1>
-			<div id="description">
-				<p>I build web applications for a more usable and beautiful internet.</p>
-			</div>
+<div class="introduction">
+	<h1>Web Developer</h1>
+	<div class="description">
+		<p>I build web applications for a more usable and beautiful internet.</p>
+	</div>
+</div>
+
+<div class="content">
+	<h2>Projects</h2>
+	<div class="proj-1">
+		<img src="http://placekitten.com/400/400" />
+		<div class="description" >
+			<p>A tool to document every aspect of the job search so that the user can easily keep track of all the various resources needed for the job search. Constructed and designed by Jeremy.</p>
+			<a href="#" id="folio-process">The process</a>
 		</div>
-		
-		<div class="projects">
-			<h2>Projects</h2>
-			<div class="proj-1">
-				<img src="croc-hunter.png" />
-				<div class="descrip" >
-					<p>A tool to document every aspect of the job search so that the user can easily keep track of all the various resources needed for the job search. Constructed and designed by Jeremy.</p>
-					<a href="#" id="folio-process">The process</a>
-				</div>
-			</div>
-			<div class="proj-2">
-				<img src="http://placekitten.com/350/350" />
-				<div class="descrip" >
-					<p>Design isn&#39t just how it looks and works, it&#39s also how it makes you feel. All possible interactions with any part of a brand must be delicately orchestrated to provide one whole experience. This is what I do, everything from user experience planning to front-end coding. Peedu Tuisk, aka matude</p>	
-				</div>
-			</div>
+	</div>
+	<div class="proj-2">
+		<img src="http://placekitten.com/350/350" />
+		<div class="description" >
+			<p>Design isn&#39t just how it looks and works, it&#39s also how it makes you feel. All possible interactions with any part of a brand must be delicately orchestrated to provide one whole experience. This is what I do, everything from user experience planning to front-end coding. Peedu Tuisk, aka matude</p>	
 		</div>
-	</body>
-
-</html>
+	</div>
+</div>
