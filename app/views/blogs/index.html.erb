@@ -2,15 +2,19 @@
 	<h1>Blog</h1>
 </div>
 
-<div class="contents">
+<div class="content">
 	<% for blog in @blogs do %>
 		<div class="blog-<%= blog.id %>">
 			<h2><%= blog.title %></h2>
 			<div class="blog-content">
-				<%= blog.contents.gsub(/\n/, '<br/>').html_safe %>
+				<%= simple_format(blog.contents) %>
 			</div>
 			<%= link_to "Comments", '#' %>
 			<p><%= blog.tags %></p>
+			<% if session[:admin_id] %>
+				<%= link_to "Edit", edit_blog_path(blog) %>
+				<%= link_to "Delete", blog_path(blog), method: :delete, data: { confirm: "You sure?" } %>
+			<% end %>
 		</div>
 	<% end %>
 	

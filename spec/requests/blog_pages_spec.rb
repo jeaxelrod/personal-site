@@ -33,14 +33,40 @@ describe "Blog" do
 			before do
 				click_link 'New Post'
 				fill_in 'Contents', with: "There is a large American heritage dictionary"
-				fill_in 'Title', with: "American Heritage Dictionary"
+				fill_in 'Title', with: "Dictionaries"
 				fill_in 'Tags', with: "dictionary, reference"
 				click_button 'Create Blog'
 			end
 			
 			it { should have_content("There is a large American heritage dictionary") }
-			it { should have_content("American Heritage Dictionary") }
+			it { should have_content("Dictionaries") }
 			it { should have_content("dictionary, reference") }
+		end
+		describe "editing blog post" do
+			before do
+				visit blogs_path
+				click_link 'Edit'
+				fill_in 'Contents' , with: "I use a windows computer"
+				fill_in 'Title', with: "My Computer"
+				fill_in 'Tags', with: 'Computers'
+				click_button 'Update Blog'
+			end
+			
+			it { should have_content("I use a windows computer") }
+			it { should have_content("My Computer") }
+			it { should have_content("Computers") }
+		end
+		
+		describe "and then deleting blog post" do
+			before do
+				visit blogs_path
+				click_link "Delete"
+			end
+			
+			it { should have_content("Blog") }
+			it { should_not have_content("There is a large American heritage dictionary") }
+			it { should_not have_content("Dictionaries") }
+			it { should_not have_content("dictionary, reference") }
 		end
 	end		
 		
