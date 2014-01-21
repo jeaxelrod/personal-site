@@ -7,8 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<% if session[:admin_id] %>
+		<%= render 'shared/admin_header' %>
+	<% end %>
 
-<%= yield %>
+	<%= render 'shared/header' %>
+
+	<%= yield %>
 
 </body>
 </html>
