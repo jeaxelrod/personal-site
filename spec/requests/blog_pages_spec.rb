@@ -71,7 +71,7 @@ describe "Blog" do
 	end		
 	
 	describe "blog tags" do
-		let!(:blog2) { Blog.create(title: "Uncle Grandpa", tags: "comedy, cartoons",
+		let!(:blog2) { Blog.create(title: "Uncle Grandpa", tags: "COmeDy, cartoons",
 															contents: "This show is really random") }
 		let!(:blog3) { Blog.create(title: "Marshmallows", tags: "food", 
 															contents: "They taste good when roasted over a fire") }
