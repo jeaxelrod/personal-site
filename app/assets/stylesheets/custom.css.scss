@@ -158,7 +158,14 @@ body {
 		.about-pic {
 			background-image: url('http://placekitten.com/300/300');
 		}
-	}		
+	}	
+	#blog h2 {
+		margin-bottom: 0;
+	}
+	.blog-date {
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
 			
 }
 

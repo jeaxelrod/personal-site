@@ -2,15 +2,24 @@
 	<h1>Blog</h1>
 </div>
 
-<div class="content">
+<div id="blog" class="content">
 	<% for blog in @blogs do %>
 		<div class="blog-<%= blog.id %>">
 			<h2><%= blog.title %></h2>
+			<p class="blog-date"><%= blog.created_at.strftime("%A, %B %d, %Y") %></p>
 			<div class="blog-content">
 				<%= simple_format(blog.contents) %>
 			</div>
 			<%= link_to "Comments", '#' %>
-			<p><%= blog.tags %></p>
+			<% if blog.tags %>
+				<div class='tags'>
+					<p>Tags: 
+						<% blog.tags.split(', ').each do |tag| %>
+							<%= link_to tag.downcase, blogs_path(tag: tag.downcase) %><% if tag !=  blog.tags.split(' ').last %>,<% end %>
+						<% end %>
+					</p>
+				</div>
+			<% end %>
 			<% if session[:admin_id] %>
 				<%= link_to "Edit", edit_blog_path(blog) %>
 				<%= link_to "Delete", blog_path(blog), method: :delete, data: { confirm: "You sure?" } %>

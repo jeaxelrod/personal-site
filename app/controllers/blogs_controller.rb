@@ -15,10 +15,16 @@ class BlogsController < ApplicationController
 	end
 	
 	def index
-		@blogs = Blog.all
-	end
-	
-	def show 
+		if params[:tag]
+			@blogs = []
+			Blog.all.each do |blog|
+				if blog.tags.downcase.include? params[:tag]
+					@blogs.append(blog)
+				end
+			end
+		else
+			@blogs = Blog.all
+		end
 	end
 	
 	def edit

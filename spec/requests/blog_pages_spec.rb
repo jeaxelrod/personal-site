@@ -4,7 +4,7 @@ describe "Blog" do
 	subject { page }
 	
 	let!(:blog) { Blog.create(contents: "Larem ipsum crossed the road",
-														title: "Larem ipsum", tags:"[comedy, latin]") }
+														title: "Larem ipsum", tags:"comedy, latin") }
 	let(:admin) { Admin.create(username:"Jim", password:"foobar", 
 														password_confirmation: "foobar") }
 	
@@ -54,7 +54,7 @@ describe "Blog" do
 			
 			it { should have_content("I use a windows computer") }
 			it { should have_content("My Computer") }
-			it { should have_content("Computers") }
+			it { should have_content("computers") }
 		end
 		
 		describe "and then deleting blog post" do
@@ -69,5 +69,19 @@ describe "Blog" do
 			it { should_not have_content("dictionary, reference") }
 		end
 	end		
+	
+	describe "blog tags" do
+		let!(:blog2) { Blog.create(title: "Uncle Grandpa", tags: "comedy, cartoons",
+															contents: "This show is really random") }
+		let!(:blog3) { Blog.create(title: "Marshmallows", tags: "food", 
+															contents: "They taste good when roasted over a fire") }
+		before do
+			visit blogs_path
+			first('.tags').click_link 'comedy'
+		end
 		
+		it { should have_content("Uncle Grandpa") }
+		it { should have_content("Larem ipsum") }
+		it { should_not have_content("Marshmallows") } 
+	end
 end
