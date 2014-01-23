@@ -5,10 +5,12 @@ PersonalApp::Application.routes.draw do
 
 	resources :sessions, only: [:new, :create, :destroy]
 	resources :blogs
+	resources :messages
 	
   root 'static_pages#home'
 	match '/about',   to: 'static_pages#about',   via: 'get'
-	match '/contact', to: 'static_pages#contact', via: 'get'
+	match '/contact', to: 'contact#new',         	via: 'get'
+	match '/contact', to: 'contact#create',       via: 'post'
 	match '/signin',  to: 'sessions#new'      ,   via: 'get'
 	match '/signout', to: 'sessions#destroy'  ,   via: 'delete'
 end

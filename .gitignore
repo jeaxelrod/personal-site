@@ -17,6 +17,9 @@
 
 # Ignore other unneeded files.
 database.yml
+config/*.yml
+config/initializers/secret_token.rb
+config/initializers/app_env_vars.rb
 doc/
 *.swp
 *~
