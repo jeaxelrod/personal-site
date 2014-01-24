@@ -5,6 +5,7 @@
 body {
 	background-color: white;
 	color: gray;
+	margin: 0;
 } 
 
 /* Typography */ 
@@ -195,8 +196,16 @@ body {
 					width: 100%;
 					display: block;
 					padding: 1px 0 1px 0;
+				}
+				
+				.field_with_errors {
+					color: red;
 					
-
+					textarea, input  {
+					border: 1px solid red;
+					padding-right: 1px;
+					padding-left: 1px;
+					}
 				}
 				
 				textarea {
@@ -210,6 +219,36 @@ body {
 			}	
 		}
 	}
+	
+	footer { 
+		border-top: 1px solid lightgray;
+		margin-top: 100px;
+		#footer-left {
+			float: left;
+			margin-left: 75px;
+			height: 100px;
+			line-height: 100px;
+		}
+		
+		#footer-right {
+			float: right;
+			height: 100px;
+			margin-right: 75px;
+			
+			p {
+				margin: 0;
+				
+				a {
+					color: gray;
+				}
+			}
+			:first-child {
+				margin-top: 26px ;
+				
+			}
+		}
+	}
+	
 }
 
 /* Desktop styles (wider than 1140 pixels */

@@ -6,6 +6,13 @@
 		<p><%= mail_to 'axelrod.jeremy@gmail.com'%></p>
 		<%= form_for @message, url: contact_path do |f| %>
 			<!-- TODO error message -->
+			<% if @message.errors.any?  %>
+				<ul>
+				<% @message.errors.full_messages().each do |message| %>
+					<li><%= message %></li>
+				<% end %>
+				</ul>
+			<% end %>
 
 			
 			<%= f.label :name %>
@@ -17,7 +24,7 @@
 			<%= f.label :subject %>
 			<%= f.text_field :subject %>
 			
-			<%= f.label :body %>
+			<%= f.label :body, "Message" %>
 			<%= f.text_area :body %>
 			
 			<%= f.submit "Send Message" %>
