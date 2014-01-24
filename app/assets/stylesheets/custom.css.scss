@@ -29,14 +29,7 @@ body {
 
 	/* header */
 	
-	header {
-		display: block;
-		width: 100%;
-		overflow: hidden;
-		border: none;
-		
-	}
-		#logo {
+	#logo {
 		width: 140px;
 		height: 140px;
 		background-image: url('http://placekitten.com/140/140');
@@ -50,7 +43,8 @@ body {
 		}
 	}
 	
-	header {
+	
+	header#header {
 		display: block;
 		width: 100%;
 		overflow: hidden;
@@ -75,6 +69,21 @@ body {
 			
 			#blog {
 				padding-left: 5px;
+			}
+		}
+	}
+	
+	header#admin {
+		margin-left: 200px;
+		margin-right: 200px;
+		
+		nav {
+			margin-left: auto;
+			margin-right: auto;
+			width: 170px;
+			
+			a {
+				padding: 0 5px 0 5px;
 			}
 		}
 	}
