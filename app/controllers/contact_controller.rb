@@ -8,9 +8,9 @@ class ContactController < ApplicationController
 		@message = Message.new(params[:message])
 		if @message.valid?
 			ContactMailer.send_message(@message).deliver
-			redirect_to root_url
+			flash[:notice] = "Thank you for getting in touch!"
+			redirect_to contact_path
 		else
-			flash[:alert] = "Nope"
 			render 'new'
 		end
 	end
