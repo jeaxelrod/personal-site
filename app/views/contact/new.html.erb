@@ -1,24 +1,27 @@
-<div class="introduction">
-	<h1>Contact Me</h1>
-</div>
-<div class="content">
-	<%= form_for @message, url: contact_path do |f| %>
-		<!-- TODO error message -->
+<div id="contact">
+	<div class="introduction">
+		<h1>Contact Me</h1>
+	</div>
+	<div id="email">
+		<p><%= mail_to 'axelrod.jeremy@gmail.com'%></p>
+		<%= form_for @message, url: contact_path do |f| %>
+			<!-- TODO error message -->
 
-		
-		<%= f.label :name %>
-		<%= f.text_field :name %>
-		
-		<%= f.label :email %>
-		<%= f.text_field :email %>
-		
-		<%= f.label :subject %>
-		<%= f.text_field :subject %>
-		
-		<%= f.label :body %>
-		<%= f.text_area :body %>
-		
-		<%= f.submit "Send Message" %>
-		
-	<% end %>	
+			
+			<%= f.label :name %>
+			<%= f.text_field :name %>
+			
+			<%= f.label :email %>
+			<%= f.text_field :email %>
+			
+			<%= f.label :subject %>
+			<%= f.text_field :subject %>
+			
+			<%= f.label :body %>
+			<%= f.text_area :body %>
+			
+			<%= f.submit "Send Message" %>
+			
+		<% end %>	
+	</div>
 </div>
