@@ -22,8 +22,9 @@ class BlogsController < ApplicationController
 					@blogs.append(blog)
 				end
 			end
+				@blogs = Kaminari.paginate_array(@blogs).page(params[:page]).per(5)
 		else
-			@blogs = Blog.all
+			@blogs = Blog.page(params[:page]).per(5)
 		end
 	end
 	

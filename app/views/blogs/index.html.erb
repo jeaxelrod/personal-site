@@ -3,6 +3,8 @@
 </div>
 
 <div id="blog" class="content">
+
+	<%= paginate @blogs %>
 	<% for blog in @blogs do %>
 		<div class="blog-<%= blog.id %>">
 			<h2><%= blog.title %></h2>
@@ -26,5 +28,7 @@
 			<% end %>
 		</div>
 	<% end %>
+	
+	<%= paginate @blogs %>
 	
 </div>
