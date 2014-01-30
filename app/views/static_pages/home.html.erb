@@ -7,6 +7,15 @@
 
 <div class="content">
 	<h2>Projects</h2>
+	<% @projects.each_with_index do |project, index| %>
+		<div class="proj-<%= index %>">
+			<img src="http://placekitten.com/400/400">
+			<div class="description">
+				<p><%= project.description %></p>
+				<%= link_to "The code", project.link %>
+			</div>
+		</div>
+	<% end %>
 	<div class="proj-1">
 		<img src="http://placekitten.com/400/400" />
 		<div class="description" >
