@@ -38,7 +38,7 @@ class ProjectsController < ApplicationController
  private
 	
     def project_params
-      params.require(:project).permit(:link, :description, :name)
+      params.require(:project).permit(:link, :description, :name, :gitlink)
 		end
 		
 		def signed_in_admin 
