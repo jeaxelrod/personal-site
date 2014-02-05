@@ -1,0 +1,27 @@
+<div class="content" id="new-blog">
+	<%= form_for @project do |f| %>
+	
+		<div class="text-field">
+			<%= f.label :name %>
+			<%= f.text_field :name %>
+		</div>
+		
+		<%= f.label :description %>
+		<%= f.text_area :description %>
+		
+		<div class="text-field">
+			<p>Format: "http://..."</p>
+			<%= f.label :link %>
+			<%= f.text_field :link %>
+		</div>
+		
+		<div class="text-field">
+			<%= f.label :gitlink, "Github Link" %>
+			<%= f.text_field :gitlink %>
+		</div>
+		
+		<div class="submit">
+			<%= f.submit %>
+		</div>
+	<% end %>
+</div>

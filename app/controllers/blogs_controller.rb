@@ -1,5 +1,5 @@
 class BlogsController < ApplicationController
-	before_action :signed_in_admin, only: [:new]
+	before_action :signed_in_admin, only: [:new, :create, :edit, :update, :destroy]
 
 	def new
 		@blog = Blog.new
@@ -8,6 +8,7 @@ class BlogsController < ApplicationController
 	def create
 		@blog = Blog.new(blog_params)
 		if @blog.save
+			flash[:notice] = "Blog post created"
 			redirect_to blogs_url
 		else 
 			render 'new'
@@ -35,6 +36,7 @@ class BlogsController < ApplicationController
 	def update
 		@blog = Blog.find(params[:id])
 		if @blog.update_attributes(blog_params)
+		  flash[:notice] = "Blog post updated"
 			redirect_to blogs_url
 		else
 			render 'edit'
@@ -45,12 +47,11 @@ class BlogsController < ApplicationController
 		Blog.find(params[:id]).destroy
 		redirect_to blogs_url
 	end
+	
 	private
 	
 		def signed_in_admin
-			unless session[:admin_id]
-				redirect_to :back
-			end
+			redirect_to root_url unless session[:admin_id]
 		end
 		
 		def blog_params

@@ -1,0 +1,18 @@
+<h2>Projects</h2>
+<% @projects.each_with_index do |project, index| %>
+	<div class="proj-<%= index %>">
+		<%= link_to project.link do %>
+			<%= image_tag("#{project.name}.png", :alt=> project.name) %>
+		<% end %>
+		<div class="description">
+			<p><%= project.description %></p>
+			<%= link_to "The code", project.gitlink %>
+			<% if session[:admin_id] %>
+				<div class="admin-links">
+					<p><%= link_to "Edit Project", edit_project_path(project) %></p>
+					<p><%= link_to "Delete Project", project_path(project), method: :delete, data: { confirm: "You sure?" } %></p>
+				</div>
+			<% end %>
+		</div>
+	</div>
+<% end %>

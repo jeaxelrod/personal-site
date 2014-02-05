@@ -6,27 +6,5 @@
 </div>
 
 <div class="content">
-	<h2>Projects</h2>
-	<% @projects.each_with_index do |project, index| %>
-		<div class="proj-<%= index %>">
-			<img src="http://placekitten.com/400/400">
-			<div class="description">
-				<p><%= project.description %></p>
-				<%= link_to "The code", project.link %>
-			</div>
-		</div>
-	<% end %>
-	<div class="proj-1">
-		<img src="http://placekitten.com/400/400" />
-		<div class="description" >
-			<p>A tool to document every aspect of the job search so that the user can easily keep track of all the various resources needed for the job search. Constructed and designed by Jeremy.</p>
-			<a href="http://github.com/jeaxelrod/personal-site" id="github-link">The code</a>
-		</div>
-	</div>
-	<div class="proj-2">
-		<img src="http://placekitten.com/350/350" />
-		<div class="description" >
-			<p>Design isn&#39t just how it looks and works, it&#39s also how it makes you feel. All possible interactions with any part of a brand must be delicately orchestrated to provide one whole experience. This is what I do, everything from user experience planning to front-end coding. Peedu Tuisk, aka matude</p>	
-		</div>
-	</div>
+  <%= render 'shared/projects'%>
 </div>
