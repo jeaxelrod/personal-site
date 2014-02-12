@@ -7,19 +7,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<% if session[:admin_id] %>
-		<%= render 'shared/admin_header' %>
-	<% end %>
-
-	<%= render 'shared/header' %>
+	<div class="container">
 	
-	<% flash.each do |name, msg| %>
-		<%= content_tag :div, msg, class: name %>
-	<% end %>
+		<% if session[:admin_id] %>
+			<%= render 'shared/admin_header' %>
+		<% end %>
 
-	<%= yield %>
-	
-	<%= render 'shared/footer' %>
+		<%= render 'shared/header' %>
+		
+		<% flash.each do |name, msg| %>
+			<%= content_tag :div, msg, class: name %>
+		<% end %>
 
+		<%= yield %>
+		
+		<%= render 'shared/footer' %>
+  </div>
 </body>
 </html>
