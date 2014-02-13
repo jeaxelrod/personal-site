@@ -9,8 +9,20 @@ body {
 	margin: 0;
 
 } 
-.container {
+.home {
 	background: url('/images/background.png') top right no-repeat fixed;
+	background-size: 100%;
+}
+.about {
+  background: url('/images/about-background.png') top right no-repeat fixed;
+	background-size: 100%;
+}
+.contact {
+  background: url('/images/contact-background.png') top right no-repeat fixed;
+	background-size: 100%;
+}
+.blog {
+  background: url('/images/blog-background.png') top right no-repeat fixed;
 	background-size: 100%;
 }
 
@@ -32,16 +44,23 @@ body {
 
 /* Large laptop styles (wider than 1024 pixels) */
 @media only screen and (min-width: 1024px) {
-
+  /* Universal */
+  
+	body {
+	  font-size: 12px;
+		text-shadow: 1px 1px 1px #333333;
+	}
+	
 	/* header */
 	
 	#logo {
 		width: 140px;
 		height: 140px;
-		background-image: url('http://placekitten.com/140/140');
+		background-color: rgb(237, 206, 96);
 		margin: 25px 0 25px 15%;
 		float: left;
 		border-radius: 999px;
+		opacity: 0.8;
 		a {
 			width: 140px;
 			height: 140px;
@@ -68,7 +87,7 @@ body {
 				padding: 0px 5px 5px 5px;
 			text-decoration: none;
 			color: white;
-			font-size: 26px;
+			font-size: 2em;
 			}
 			a:hover {
 				text-decoration: underline;
@@ -106,13 +125,14 @@ body {
 		margin: 5px 200px 100px 200px;
 		
 		h1 {
-			font-size: 50px;
+			font-size: 5em;
 			text-align: center;
+	
 		}
 		
 		.description {
 			margin: 0px 100px 20px 100px;
-			font-size: 20px;
+			font-size: 2em;
 			
 			p {
 				text-align: center;
@@ -126,7 +146,7 @@ body {
 		margin: 50px 200px 5px 200px;
 		
 		h2 {
-			font-size: 30px;
+			font-size: 4em;
 		}
 	}
 	
@@ -138,12 +158,24 @@ body {
 			postion: relative;
 			float: left;
 			width: 35%;
+			opacity: 0.8;
 		}
 		
 		.description {
 			margin: 90px 17.5% 90px 45.5%;
 			position: relative;
 			width: 50%;
+			
+			p {
+			  font-size: 2em;
+				text-shadow: 1px 1px 1px black;
+			}
+			
+			a {
+			  font-size: 1.75em;
+				color: gray;
+				text-shadow: 1px 1px 1px white;
+			}
 		}
 		.admin-links {
 		
@@ -172,7 +204,8 @@ body {
 		}
 			
 		.about-pic {
-			background-image: url('/images/about_pic.jpg');
+				background: url('/images/pigeon-jeremy.jpg');
+				
 		}
 	}
 	
@@ -272,6 +305,7 @@ body {
 		height: 100px;
 		color: gray;
 		background-color: white;
+		text-shadow: none;
 		
 		div {
 				
