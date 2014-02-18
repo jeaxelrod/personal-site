@@ -5,10 +5,14 @@
 body {
 	background-color: white;
 	color: #f1f1f1;
-
 	margin: 0;
-
 } 
+a {
+	color: #f1f1f1;
+}
+a:hover {
+	color: rgb(237, 206, 96);
+}
 .home {
 	background: url('/images/background.png') top right no-repeat fixed;
 	background-size: 100%;
@@ -85,9 +89,8 @@ body {
 			
 			a {
 				padding: 0px 5px 5px 5px;
-			text-decoration: none;
-			color: white;
-			font-size: 2em;
+			  text-decoration: none;
+			  font-size: 2em;
 			}
 			a:hover {
 				text-decoration: underline;
@@ -143,11 +146,16 @@ body {
 	/* Content */
 	
 	.content {
-		margin: 50px 200px 5px 200px;
+		margin: 50px 15% 5px 15%;
 		
 		h2 {
 			font-size: 4em;
 		}
+		
+		p {
+			font-size: 1.75em;
+		}		
+
 	}
 	
 	[class^="proj-"] {
@@ -162,7 +170,7 @@ body {
 		}
 		
 		.description {
-			margin: 90px 17.5% 90px 45.5%;
+			margin: 0 17.5% 0 45.5%;
 			position: relative;
 			width: 50%;
 			
@@ -173,8 +181,6 @@ body {
 			
 			a {
 			  font-size: 1.75em;
-				color: gray;
-				text-shadow: 1px 1px 1px white;
 			}
 		}
 		.admin-links {
@@ -189,15 +195,15 @@ body {
 	}
 	
 	.about-pic {
-		width: 250px;
-		height: 250px;
+		width: 100%;
+		height: 275px;
 		border-radius: 999px;
 	}
 	
 	#about-left {
 		float:left;
 		display: inline-block;
-		width: 250px;
+		width: 29%;
 	
 		h2 {
 			text-align: center;
@@ -210,10 +216,10 @@ body {
 	}
 	
 	#about-center {
-		width: 250px;
+		width: 29%;
 		clear: left;
-		margin-left: 90px;
-		margin-right: 50px;
+		margin-left: 6.5%;
+		margin-right: 5%;
 		display: inline-block;
 		
 		 h2 {
@@ -227,7 +233,7 @@ body {
 	
 	#about-right {
 		float: right;
-		width: 250px;
+		width: 29%;
 		display: inline-block;
 		
 		h2 {
@@ -248,8 +254,8 @@ body {
 	
 	#contact {
 			
-		margin-left: 531px;
-		margin-right: 531px;
+		margin-left: 37%;
+		margin-right: 37%;
 		
 	
 		.introduction {
@@ -265,6 +271,7 @@ body {
 			
 			margin-left: 12px;
 			margin-right: 10px;
+			font-size: 1.5em;
 			
 			form {
 				margin-left: auto;
@@ -274,6 +281,7 @@ body {
 					width: 100%;
 					display: block;
 					padding: 1px 0 1px 0;
+					font-size: 1.3em;
 				}
 				
 				.field_with_errors {
@@ -289,7 +297,8 @@ body {
 				textarea {
 					width: 100%;
 					resize: vertical;
-					min-height: 5em;
+					font-size: 1.5em;
+					min-height: 6em;
 					overflow: visible;
 					margin-bottom: 18px;
 					padding: 0;
@@ -300,16 +309,12 @@ body {
 	
 	footer { 
 
-		margin-top: 100px;
+		margin-top: 40px;
 	  opacity: .8;
-		height: 100px;
-		color: gray;
-		background-color: white;
-		text-shadow: none;
+		height: 20px;
 		
 		div {
 				
-			height: 100px;
 			margin-right: 75px;
 			margin-left: 75px;
 			width: 180px;
@@ -317,11 +322,11 @@ body {
 				margin: 0;
 				
 				a {
-					color: gray;
+				  color: white;
 				}
 			}
 			:first-child {
-				margin-top: 26px ;	
+				margin: 0 ;	
 			}
 		}
 		
@@ -333,10 +338,8 @@ body {
 			float: right;
 			text-align: right;
 		}
-		
-	
-		
 	}
+
 	
 	#new-blog {
 		.text-field {
