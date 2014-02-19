@@ -6,7 +6,9 @@
 		<% end %>
 		<div class="description">
 			<p><%= project.description %></p>
-			<%= link_to "The code", project.gitlink %>
+			<% if project.gitlink.present? %>
+			  <%= link_to "Source", project.gitlink %>
+			<% end %>
 			<% if session[:admin_id] %>
 				<div class="admin-links">
 					<p><%= link_to "Edit Project", edit_project_path(project) %></p>
