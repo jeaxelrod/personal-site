@@ -165,14 +165,14 @@ body {
 		img {
 			postion: relative;
 			float: left;
-			width: 35%;
+			width: 40%;
 			opacity: 0.8;
 		}
 		
 		.description {
-			margin: 0 17.5% 0 45.5%;
+			margin: 10% 0 0 50%;
 			position: relative;
-			width: 50%;
+		
 			
 			p {
 			  font-size: 2em;
@@ -195,15 +195,17 @@ body {
 	}
 	
 	.about-pic {
-		width: 100%;
+		width: 94%;
 		height: 275px;
 		border-radius: 999px;
+		margin-left: 3%;
+		margin-right: 3%;
 	}
 	
 	#about-left {
 		float:left;
 		display: inline-block;
-		width: 29%;
+		width: 31%;
 	
 		h2 {
 			text-align: center;
@@ -214,6 +216,37 @@ body {
 				
 		}
 	}
+		
+	#about-center {
+		width: 31%;
+		clear: left;
+		margin-left: 3.5%;
+		margin-right: 3.5%;
+		display: inline-block;
+		
+		 h2 {
+			text-align: center;
+		}
+			
+		.about-pic {
+			background-image: url('/images/developer.png');
+		}
+	}
+	
+	#about-right {
+		float: right;
+		width: 31%;
+		display: inline-block;
+		
+		h2 {
+			text-align: center;
+		}
+		
+		.about-pic {
+			background-image: url('/images/designer.jpg');
+		}
+	}	
+
 	[class^="blog-"] {
 
 	  .blog-content {
@@ -231,43 +264,15 @@ body {
 	    }
 	  }
 
-    > a {
-      display: block;
-    }
+      > a {
+        display: block;
+      }
 	}
-		
-	#about-center {
-		width: 29%;
-		clear: left;
-		margin-left: 6.5%;
-		margin-right: 5%;
-		display: inline-block;
-		
-		 h2 {
-			text-align: center;
-		}
-			
-		.about-pic {
-			background-image: url('/images/developer.png');
-		}
-	}
-	
-	#about-right {
-		float: right;
-		width: 29%;
-		display: inline-block;
-		
-		h2 {
-			text-align: center;
-		}
-		
-		.about-pic {
-			background-image: url('/images/designer.jpg');
-		}
-	}	
+
 	#blog h2 {
 		margin-bottom: 0;
 	}
+
 	.blog-date {
 		margin-top: 0;
 		margin-bottom: 30px;
@@ -332,7 +337,7 @@ body {
 
 		margin-top: 40px;
 	  opacity: .8;
-		height: 20px;
+		height: 30px;
 		font-size: 1.25em;
 		
 		div {
@@ -341,7 +346,7 @@ body {
 			margin-left: 75px;
 			width: 180px;
 			p {
-				margin: 0;
+				margin: 0 0 10px 0;
 				
 				a {
 				  color: white;
