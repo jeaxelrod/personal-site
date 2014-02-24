@@ -61,18 +61,20 @@ a:hover {
 		display: block;
 		width: 100%;
 		overflow: hidden;
-		border: 1px solid black;
 
 		#navagation {
-			float: right;
 			display: block;
-			margin: 100px 10px 0 0; 
+			margin-top: 120px;
+			margin-left: 30px;
 			padding: 0;
-			width: auto;
 			color: white;
-			
+
+			a:first-child {
+			  display: none;
+			}
+
 			a {
-				padding: 0px 5px 5px 5px;
+				padding: 0px 15px 0 30px;
 			  text-decoration: none;
 			  font-size: 4em;
 			}
@@ -109,7 +111,7 @@ a:hover {
 	/* Title */
 	
 	.introduction {
-		margin: 5px 200px 100px 200px;
+		margin: 5px 50px 100px 50px;
 		
 		h1 {
 			font-size: 5em;
@@ -118,7 +120,7 @@ a:hover {
 		}
 		
 		.description {
-			margin: 0px 100px 20px 100px;
+			margin: 0px 50px 20px 50px;
 			font-size: 2em;
 			
 			p {
@@ -130,7 +132,7 @@ a:hover {
 	/* Content */
 	
 	.content {
-		margin: 50px 15% 5px 15%;
+		margin: 50px 50px 5px 50px;
 		
 		h2 {
 			font-size: 4em;
