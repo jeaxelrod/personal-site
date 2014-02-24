@@ -13,20 +13,22 @@ a {
 a:hover {
 	color: rgb(237, 206, 96);
 }
+
 .home {
-	background: url('/images/background.png') top right no-repeat fixed;
-	background-size: 100%;
+	background: url('/images/background-mobile.png') fixed;
+	background-size: cover;
+	backgroud-repeat: no-repeat;
 }
 .about {
-  background: url('/images/about-background.png') top right no-repeat fixed;
+  background: url('/images/about-background-mobile.png') top right no-repeat fixed;
 	background-size: 100%;
 }
 .contact {
-  background: url('/images/contact-background.png') top right no-repeat fixed;
+  background: url('/images/contact-background-mobile.png') top right no-repeat fixed;
 	background-size: 100%;
 }
 .blog {
-  background: url('/images/blog-background.png') top right no-repeat fixed;
+  background: url('/images/blog-background-mobile.png') top right no-repeat fixed;
 	background-size: 100%;
 }
 
@@ -40,6 +42,7 @@ body {
 
 /* Larger mobile styles (wider than 320 pixels) */
 @media only screen and (min-width: 321px) {
+
 }
 
 /* Tablet styles (wider than 600 pixels) */
