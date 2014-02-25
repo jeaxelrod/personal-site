@@ -19,9 +19,10 @@ a:hover {
 /* Backgrounds */
 
 .home {
-	background: url('/images/background-mobile.png') fixed;
+	background: url('/images/background-mobile.png');
 	background-size: cover;
 	backgroud-repeat: no-repeat;
+	background-attachment: fixed;
 }
 .about {
   background: url('/images/about-background-mobile.png') top right no-repeat fixed;
@@ -42,16 +43,16 @@ a:hover {
 	/* header */
 	
 	#logo {
-		width: 300px;
-		height: 300px;
+		width: 200px;
+		height: 200px;
 		background-color: rgb(237, 206, 96);
 		margin: 10px 0 10px 5%;
 		float: left;
 		border-radius: 999px;
 		opacity: 0.8;
 		a {
-			width: 300px;
-			height: 300px;
+			width: 200px;
+			height: 200px;
 			display: block;
 		}
 	}
@@ -64,8 +65,8 @@ a:hover {
 
 		#navagation {
 			display: block;
-			margin-top: 120px;
-			margin-left: 30px;
+			margin-top: 80px;
+			margin-left: 300px;
 			padding: 0;
 			color: white;
 
@@ -266,8 +267,8 @@ a:hover {
 	
 	#contact {
 			
-		margin-left: 37%;
-		margin-right: 37%;
+		margin-left: 27%;
+		margin-right: 27%;
 		
 	
 		.introduction {
@@ -352,7 +353,7 @@ a:hover {
 			text-align: right;
 		}
 	}
-	.about footer #footer-left, .contact footer #footer-left {
+	.contact footer #footer-left {
 	  color: #141414;
 	  text-shadow: 1px 1px 1px #C5C5C5;
 	}
