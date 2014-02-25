@@ -81,5 +81,4 @@ PersonalApp::Application.configure do
   # Adding Webfonts tot he Asset Pipline
   config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
 
-  config.assets.compile = true
 end
