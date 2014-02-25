@@ -77,7 +77,9 @@ PersonalApp::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
-  
+
   # Adding Webfonts tot he Asset Pipline
   config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
+
+  config.assets.compile = true
 end
