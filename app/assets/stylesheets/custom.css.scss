@@ -2,33 +2,33 @@
 
 /* Universal */
 @font-face {
-  font-family: 'quicksandregular';
-  src: font-url('quicksand-regular-webfont.eot');
-  src: font-url('quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       font-url('quicksand-regular-webfont.woff') format('woff'),
-       font-url('quicksand-regular-webfont.ttf') format('truetype'),
-       font-url('quicksand-regular-webfont.svg#quicksandregular') format('svg');
+  font-family: 'Quicksand';
+  src: url('/assets/quicksand-regular-webfont.eot');
+  src: url('/assets/quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/assets/quicksand-regular-webfont.woff') format('woff'),
+       url('/assets/quicksand-regular-webfont.ttf') format('truetype'),
+       url('/assets/quicksand-regular-webfont.svg#quicksandregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-    font-family: 'amatic_scregular';
-    src: font-url('amaticsc-regular-webfont.eot');
-    src: font-url('amaticsc-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         font-url('amaticsc-regular-webfont.woff') format('woff'),
-         font-url('amaticsc-regular-webfont.ttf') format('truetype'),
-         font-url('amaticsc-regular-webfont.svg#amatic_scregular') format('svg');
+    font-family: 'Amatic';
+    src: font-url('/assets/amaticsc-regular-webfont.eot');
+    src: font-url('/assets/amaticsc-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('/assets/amaticsc-regular-webfont.woff') format('woff'),
+         font-url('/assets/amaticsc-regular-webfont.ttf') format('truetype'),
+         font-url('/assets/amaticsc-regular-webfont.svg#amatic_scregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'great_vibesregular';
-    src: font-url('greatvibes-regular-webfont.eot');
-    src: font-url('greatvibes-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         font-url('greatvibes-regular-webfont.woff') format('woff'),
-         font-url('greatvibes-regular-webfont.ttf') format('truetype'),
-         font-url('greatvibes-regular-webfont.svg#great_vibesregular') format('svg');
+    font-family: 'Great Vibes';
+    src: font-url('/assets/greatvibes-regular-webfont.eot');
+    src: font-url('/assets/greatvibes-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('/assets/greatvibes-regular-webfont.woff') format('woff'),
+         font-url('/assets/greatvibes-regular-webfont.ttf') format('truetype'),
+         font-url('/assets/greatvibes-regular-webfont.svg#great_vibesregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -156,10 +156,10 @@ a:hover {
 		h1 {
 			font-size: 6em;
 			text-align: center;
-			font-family: 'amatic_scregular';
+			font-family: 'Amatic';
 
 	    #useable {
-        font-family: 'quicksandregular';
+        font-family: 'Quicksand';
         letter-spacing: -6px;
         #s {
         	letter-spacing: -4px;
@@ -167,7 +167,7 @@ a:hover {
 	    }
 
 	    #beautiful {
-	    	font-family: 'great_vibesregular';
+	    	font-family: 'Great Vibes';
 	    }
 		}
 		
