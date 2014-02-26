@@ -209,6 +209,9 @@ a:hover {
 		border-radius: 999px;
 		margin-left: 3%;
 		margin-right: 3%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: right top;
 	}
 	
 	#about-left {
@@ -221,7 +224,7 @@ a:hover {
 		}
 			
 		.about-pic {
-				background: url('/images/pigeon-jeremy.jpg');
+				background-image: url('/images/pigeon-jeremy.jpg');
 				
 		}
 	}
@@ -253,9 +256,13 @@ a:hover {
 		
 		.about-pic {
 			background-image: url('/images/designer.jpg');
+
 		}
 	}	
-
+	a.about-link  {
+			text-decoration: none;
+			border-bottom: 1px dotted #f1f1f1;
+		}
 	[class^="blog-"] {
 
 	  .blog-content {
@@ -418,8 +425,8 @@ a:hover {
 }
 
 /* Tablet styles (wider than 600 pixels) */
-@media only screen and (min-width:600px) {
-}
+/* @media only screen and (min-width:600px) {
+} */
 
 /* Large laptop styles (wider than 1024 pixels) */
 @media only screen and (min-width: 1024px) {
@@ -530,11 +537,11 @@ a:hover {
 	
 	
 	.about-pic {
-		width: 94%;
-		height: 275px;
+		width: 21vw;
+		height: 21vw;
 		border-radius: 999px;
-		margin-left: 3%;
-		margin-right: 3%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	
 	#about-left {
@@ -547,7 +554,7 @@ a:hover {
 		}
 			
 		.about-pic {
-				background: url('/images/pigeon-jeremy.jpg');
+				background-image: url('/images/jeremy-outdoor.jpg');
 				
 		}
 	}
