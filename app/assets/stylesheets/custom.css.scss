@@ -6,8 +6,9 @@ body {
 	color: #f1f1f1;
 	margin: 0;
 	text-shadow: 1px 1px 1px #333333;
-	font-size: 12px;
-	font-family: Segoe UI;
+	font-size: 14px;
+	font-family: 'josefin_sanssemibold', 'Calibri';
+
 } 
 a {
 	color: #f1f1f1;
@@ -125,15 +126,14 @@ a:hover {
 		h1 {
 			font-size: 6em;
 			text-align: center;
-			font-family: 'Amatic';
 
-	    #useable {
-        font-family: 'Quicksand';
-        letter-spacing: -6px;
-        #s {
-        	letter-spacing: -4px;
-        }
-	    }
+		    #useable {
+		        font-family: 'Quicksand';
+		        letter-spacing: -6px;
+	        #s {
+	        	letter-spacing: -4px;
+	        }
+		}
 
 	    #beautiful {
 	    	font-family: 'Great Vibes';
@@ -148,6 +148,9 @@ a:hover {
 				text-align: center;
 			}
 		}
+	}
+	.home .introduction h1 {
+	    font-family: 'Amatic';
 	}
 	
 	/* Content */

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Quicksand';
-  src: asset_url('quicksand-regular-webfont.eot');
-  src: asset_url('quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       asset_url('quicksand-regular-webfont.woff') format('woff'),
-       asset_url('quicksand-regular-webfont.ttf') format('truetype'),
-       asset_url('quicksand-regular-webfont.svg#quicksandregular') format('svg');
+  src: font-url('/assets/quicksand-regular-webfont.eot');
+  src: font-url('/assets/quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       font-url('/assets/quicksand-regular-webfont.woff') format('woff'),
+       font-url('/assets/quicksand-regular-webfont.ttf') format('truetype'),
+       font-url('/assets/quicksand-regular-webfont.svg#quicksandregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -28,4 +28,49 @@
          font-url('/assets/greatvibes-regular-webfont.svg#great_vibesregular') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+@font-face {
+    font-family: 'overpassregular';
+    src: font-url('/assets/overpass_regular-webfont.eot');
+    src: font-url('/assets/overpass_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('/assets/overpass_regular-webfont.woff') format('woff'),
+         font-url('/assets/overpass_regular-webfont.ttf') format('truetype'),
+         font-url('/assets/overpass_regular-webfont.svg#overpassregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'caviar_dreamsregular';
+    src: font-url('/assets/caviardreams-webfont.eot');
+    src: font-url('/assets/caviardreams-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('/assets/caviardreams-webfont.woff') format('woff'),
+         font-url('/assets/caviardreams-webfont.ttf') format('truetype'),
+         font-url('/assets/caviardreams-webfont.svg#caviar_dreamsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'josefin_sansregular';
+    src: url('josefinsans-regular-webfont.eot');
+    src: url('josefinsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('josefinsans-regular-webfont.woff') format('woff'),
+         url('josefinsans-regular-webfont.ttf') format('truetype'),
+         url('josefinsans-regular-webfont.svg#josefin_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'josefin_sanssemibold';
+    src: url('josefinsans-semibold-webfont.eot');
+    src: url('josefinsans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('josefinsans-semibold-webfont.woff') format('woff'),
+         url('josefinsans-semibold-webfont.ttf') format('truetype'),
+         url('josefinsans-semibold-webfont.svg#josefin_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
