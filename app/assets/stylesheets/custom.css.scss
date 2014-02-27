@@ -83,9 +83,10 @@ a:hover {
 			}
 
 			a {
-				padding: 0px 15px 0 30px;
+			  padding: 0px 15px 0 30px;
 			  text-decoration: none;
 			  font-size: 4em;
+			  color: white;
 			}
 
 			a:hover {
@@ -175,7 +176,6 @@ a:hover {
 		img {
 			float: left;
 			width: 40%;
-			opacity: 0.8;
 		}
 		
 		.description {
@@ -338,9 +338,9 @@ a:hover {
 				
 				textarea {
 					width: 100%;
-					resize: vertical;
-					font-size: 1.5em;
-					min-height: 6em;
+					resize: both;
+					font-size: .75em;
+					min-height: 10em;
 					overflow: visible;
 					margin-bottom: 18px;
 					padding: 0;
@@ -418,10 +418,6 @@ a:hover {
 /* Larger mobile styles (wider than 320 pixels) */
 @media only screen and (min-width: 321px) {
 
-#navagation a:first-child {
-	display: none;
-}
-
 }
 
 /* Tablet styles (wider than 600 pixels) */
@@ -482,13 +478,12 @@ a:hover {
 			float: right;
 			margin: 75px 200px 75px 0px; 
 			padding: 0px 0px 10px 300px;
-			color: white;
-			
+
 			a:first-child {
 			  display: inline;
 			}
 			a {
-				padding: 0px 5px 5px 5px;
+			  padding: 0px 5px 5px 5px;
 			  font-size: 2em;
 			}
 		}
@@ -648,7 +643,7 @@ a:hover {
 			width: 100%;
 			height: 17em;
 			font-family: Segoe UI;
-			font-size: 18px;
+			font-size: 1em;
 			resize: vertical;
 		}
 		
