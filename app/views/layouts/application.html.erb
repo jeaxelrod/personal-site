@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PersonalApp</title>
+  <title>Jeremy Axelrod <%= "|| #{yield(:page_title)}" if yield(:page_title).present? %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -22,6 +22,7 @@
 		<%= yield %>
 		
 		<%= render 'shared/footer' %>
+		<%= render 'shared/analytics' %>
   </div>
 </body>
 </html>
