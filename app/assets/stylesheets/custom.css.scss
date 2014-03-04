@@ -204,40 +204,47 @@ a:hover {
 	}
 	
 	.about-pic {
-		width: 94%;
-		height: 275px;
+		width: 25vw;
+		height: 25vw;
 		border-radius: 999px;
-		margin-left: 3%;
-		margin-right: 3%;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: right top;
+		float: left;
 	}
 	
 	#about-left {
-		float:left;
-		display: inline-block;
-		width: 31%;
+		display: block;
+		height: 25vw;
+		margin-bottom: 20px;
 	
 		h2 {
 			text-align: center;
+			margin-bottom: 24px;
+			margin-top: 0;
 		}
 			
 		.about-pic {
 				background-image: url('/images/pigeon-jeremy.jpg');
-				
+		}
+		p {
+		  padding-left: 300px;
 		}
 	}
 		
 	#about-center {
-		width: 31%;
-		clear: left;
-		margin-left: 3.25%;
-		margin-right: 3.25%;
 		display: inline-block;
+		height: 25vw;
+		margin-bottom: 20px;
 		
-		 h2 {
+		h2 {
 			text-align: center;
+			margin-bottom: 24px;
+			margin-top: 0;
+		}
+		
+		p {
+		  padding-left: 300px;
 		}
 			
 		.about-pic {
@@ -246,12 +253,18 @@ a:hover {
 	}
 	
 	#about-right {
-		float: right;
-		width: 31%;
 		display: inline-block;
+		height: 25vw;
+		margin-bottom: 20px;
 		
 		h2 {
 			text-align: center;
+			margin-bottom: 24px;
+			margin-top: 0;
+		}
+		
+		p {
+		  margin-left: 300px;
 		}
 		
 		.about-pic {
