@@ -182,8 +182,8 @@ a {
 	}
 	
 	.about-pic {
-		width: 27vw;
-		height: 27vw;
+		width: 30vw;
+		height: 30vw;
 		border-radius: 999px;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -194,12 +194,12 @@ a {
 	#about-left {
 		display: block;
 		height: 27vw;
-		margin-bottom: 40px;
+		margin-bottom: 80px;
 	
 		h2 {
 			text-align: center;
 			margin-bottom: 24px;
-			margin-top: 10px;
+			margin-top: 0;
 		}
 			
 		.about-pic {
@@ -213,13 +213,13 @@ a {
 	#about-center {
 		display: inline-block;
 		height: 27vw;
-		margin-bottom: 40px;
+		margin-bottom: 80px;
 
 		
 		h2 {
 			text-align: center;
 			margin-bottom: 24px;
-			margin-top: 10px;
+			margin-top: 0;
 		}
 		
 		p {
@@ -239,7 +239,7 @@ a {
 		h2 {
 			text-align: center;
 			margin-bottom: 24px;
-			margin-top: 10px;
+			margin-top: 0;
 		}
 		
 		p {
@@ -351,7 +351,7 @@ a {
 		margin-top: 80px;
 	  opacity: .8;
 		height: 30px;
-		font-size: 1.25em;
+		font-size: 1.45em;
 		
 		div {		
 			margin-right: 50px;
@@ -369,6 +369,7 @@ a {
 		
 		#footer-left {
 			float: left;
+			width: 300px;
 		}
 		
 		#footer-right {
@@ -688,7 +689,6 @@ a:hover {
 		
 		#footer-left {
 			float: left;
-			width: 300px;
 		}
 		
 		#footer-right {
