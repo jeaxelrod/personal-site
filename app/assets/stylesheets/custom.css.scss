@@ -1,23 +1,20 @@
 /* mixins, variables, etc. */
 
 /* Universal */ 
+
 body {
-	background-color: white;
+	background-color:  rgb(237, 206, 96);
 	color: #f1f1f1;
 	margin: 0;
-	text-shadow: 1px 1px 1px #333333;
 	font-size: 14px;
-	font-family: 'josefin_sanssemibold', 'Calibri';
-
+	font-family:'Arial';
 } 
+
 a {
-	color: #f1f1f1;
-}
-a:hover {
-	color: rgb(237, 206, 96);
+  color: #f1f1f1;
 }
 
-/* Backgrounds */
+/* Backgrounds 
 
 .home {
 	background: url('/images/background-mobile.png');
@@ -47,17 +44,16 @@ a:hover {
 	background-attachment: fixed;
 	background-position: right top;
 }
-	
+*/
 	/* header */
 	
 	#logo {
 		width: 200px;
 		height: 200px;
-		background-color: rgb(237, 206, 96);
+		background-color: rgb(245,227,165);
 		margin: 10px 0 10px 5%;
 		float: left;
 		border-radius: 999px;
-		opacity: 0.8;
 		a {
 			width: 200px;
 			height: 200px;
@@ -76,7 +72,6 @@ a:hover {
 			margin-top: 80px;
 			margin-left: 300px;
 			padding: 0;
-			color: white;
 
 			a:first-child {
 			  display: none;
@@ -84,9 +79,7 @@ a:hover {
 
 			a {
 			  padding: 0px 15px 0 30px;
-			  text-decoration: none;
 			  font-size: 4em;
-			  color: white;
 			}
 
 			a:hover {
@@ -127,18 +120,6 @@ a:hover {
 		h1 {
 			font-size: 6em;
 			text-align: center;
-
-		    #useable {
-		        font-family: 'Quicksand';
-		        letter-spacing: -6px;
-	        #s {
-	        	letter-spacing: -4px;
-	        }
-		}
-
-	    #beautiful {
-	    	font-family: 'Great Vibes';
-	    }
 		}
 		
 		.description {
@@ -149,9 +130,6 @@ a:hover {
 				text-align: center;
 			}
 		}
-	}
-	.home .introduction h1 {
-	    font-family: 'Amatic';
 	}
 	
 	/* Content */
@@ -179,13 +157,13 @@ a:hover {
 		}
 		
 		.description {
-			margin: 10% 0 0 50%;
+			margin: 0 0 0 50%;
 			position: relative;
 		
 			
 			p {
 			  font-size: 2em;
-			  text-shadow: 1px 1px 1px black;
+				margin: 0 0 25px 0;
 			}
 			
 			a {
@@ -204,8 +182,8 @@ a:hover {
 	}
 	
 	.about-pic {
-		width: 25vw;
-		height: 25vw;
+		width: 27vw;
+		height: 27vw;
 		border-radius: 999px;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -215,13 +193,13 @@ a:hover {
 	
 	#about-left {
 		display: block;
-		height: 25vw;
-		margin-bottom: 20px;
+		height: 27vw;
+		margin-bottom: 40px;
 	
 		h2 {
 			text-align: center;
 			margin-bottom: 24px;
-			margin-top: 0;
+			margin-top: 10px;
 		}
 			
 		.about-pic {
@@ -234,13 +212,14 @@ a:hover {
 		
 	#about-center {
 		display: inline-block;
-		height: 25vw;
-		margin-bottom: 20px;
+		height: 27vw;
+		margin-bottom: 40px;
+
 		
 		h2 {
 			text-align: center;
 			margin-bottom: 24px;
-			margin-top: 0;
+			margin-top: 10px;
 		}
 		
 		p {
@@ -254,17 +233,17 @@ a:hover {
 	
 	#about-right {
 		display: inline-block;
-		height: 25vw;
+		height: 27vw;
 		margin-bottom: 20px;
 		
 		h2 {
 			text-align: center;
 			margin-bottom: 24px;
-			margin-top: 0;
+			margin-top: 10px;
 		}
 		
 		p {
-		  margin-left: 300px;
+		  padding-left: 300px;
 		}
 		
 		.about-pic {
@@ -276,26 +255,31 @@ a:hover {
 			text-decoration: none;
 			border-bottom: 1px dotted #f1f1f1;
 		}
+		
 	[class^="blog-"] {
 
 	  .blog-content {
-
-			background-color: rgba(220, 220, 220, 0.7);
-			text-shadow: none;
-			color: rgba(50,50, 50, 1);
-	    font-weight: 600;
-	    display: inline-block;
 	    margin:0;	
-
+			
 	    p {
 	    	margin: 0;
-	    	padding: 5px 5px 5px 5px;
+	    	padding: 5px 0 5px 0;
 	    }
 	  }
 
-      > a {
-        display: block;
+      > a { /* Comment link */
+        display: none;
+				margin-top: 10px;
+				font-size: 1.25em;
       }
+			
+			.tags p {
+			  font-size: 1.25em;
+			}
+	}
+	
+	.pagination {
+	  font-size: 1.25em;
 	}
 
 	#blog h2 {
@@ -364,23 +348,20 @@ a:hover {
 	
 	footer { 
 
-		margin-top: 40px;
+		margin-top: 80px;
 	  opacity: .8;
 		height: 30px;
 		font-size: 1.25em;
 		
-		div {
-				
-			margin-right: 75px;
-			margin-left: 75px;
+		div {		
+			margin-right: 50px;
+			margin-left: 50px;
 			width: 180px;
+			
 			p {
 				margin: 0 0 10px 0;
-				
-				a {
-				  color: white;
-				}
 			}
+			
 			:first-child {
 				margin: 0 ;	
 			}
@@ -394,10 +375,6 @@ a:hover {
 			float: right;
 			text-align: right;
 		}
-	}
-	.contact footer #footer-left {
-	  color: #141414;
-	  text-shadow: 1px 1px 1px #C5C5C5;
 	}
 	
 	#new-blog {
@@ -440,6 +417,26 @@ a:hover {
 /* Large laptop styles (wider than 1024 pixels) */
 @media only screen and (min-width: 1024px) {
 
+/* Universal */ 
+body {
+	background-color: white;
+	color: #f1f1f1;
+	margin: 0;
+	text-shadow: 1px 1px 1px #333333;
+	font-size: 14px;
+	font-family: 'josefin_sanssemibold', 'Arial';
+} 
+
+a {
+	color: #f1f1f1;
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(237, 206, 96);
+	text-decoration: underline;
+}
+
 /* Backgrounds */
 .home {
 	background: url('/images/background.jpg');
@@ -469,14 +466,16 @@ a:hover {
 	background-attachment: fixed;
 	background-position: right top;
 }
-  /* Universal */
-  
+
 	/* header */
 	
 	#logo {
 		width: 140px;
 		height: 140px;
 		margin: 25px 0 25px 15%;
+		background-color: rgb(237, 206, 96);
+		opacity: 0.8;
+		
 		a {
 			width: 140px;
 			height: 140px;
@@ -537,10 +536,25 @@ a:hover {
 		}
 	}
 	
+	.home .introduction h1{
+	  font-family: 'Amatic';
+	}
+	
 	/* Content */
 	
 	.content {
 		margin: 50px 15% 5px 15%;
+	}
+	
+	[class^="proj-"] {
+		
+		p {
+	    text-shadow: 1px 1px 1px black;
+		}
+		
+		a {
+		  text-decoration: underline;
+		}
 	}
 	
 	
@@ -556,14 +570,17 @@ a:hover {
 		float:left;
 		display: inline-block;
 		width: 31%;
-	
+	  
 		h2 {
 			text-align: center;
 		}
 			
 		.about-pic {
 				background-image: url('/images/jeremy-outdoor.jpg');
-				
+		}
+		
+		p {
+		  padding: 0;
 		}
 	}
 		
@@ -581,6 +598,10 @@ a:hover {
 		.about-pic {
 			background-image: url('/images/developer.png');
 		}
+		
+		p {
+		  padding: 0;
+		}
 	}
 	
 	#about-right {
@@ -595,17 +616,54 @@ a:hover {
 		.about-pic {
 			background-image: url('/images/designer.jpg');
 		}
+		
+		p {
+		  padding: 0;
+		}
 	}	
 
+	[class^="blog-"] {
+
+	  .blog-content {
+
+			background-color: rgba(220, 220, 220, 0.7);
+			text-shadow: none;
+			color: rgba(50,50, 50, 1);
+	    font-weight: 600;
+	    display: inline-block;
+	    margin:0;	
+    }
+		
+		p {
+		  padding: 5px 5px 5px 5px;
+		}
+		
+		.tags {
+		  font-size: 1.25em;
+		}
+	}
+
+	#blog h2 {
+		margin-bottom: 0;
+	}
+
+	.blog-date {
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
 	
 	#contact {			
 		margin-left: 37%;
 		margin-right: 37%;
 	}
 	
+	.pagination {
+	  font-size: 1.5em;
+	}
+	
 	footer { 
 
-		margin-top: 40px;
+		margin-top: 80px;
 	  opacity: .8;
 		height: 30px;
 		font-size: 1.25em;
@@ -615,6 +673,7 @@ a:hover {
 			margin-right: 75px;
 			margin-left: 75px;
 			width: 180px;
+			font-size: 1.25em;
 			p {
 				margin: 0 0 10px 0;
 				
@@ -629,6 +688,7 @@ a:hover {
 		
 		#footer-left {
 			float: left;
+			width: 300px;
 		}
 		
 		#footer-right {
