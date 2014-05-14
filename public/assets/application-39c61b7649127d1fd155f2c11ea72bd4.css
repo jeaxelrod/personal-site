@@ -1,0 +1,560 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+/* mixins, variables, etc. */
+/* Universal */
+body {
+  background-color: #edce60;
+  color: #f1f1f1;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Arial'; }
+
+a {
+  color: #f1f1f1; }
+
+/* Backgrounds 
+
+.home {
+	background: url('/images/background-mobile.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: right top;
+}
+.about {
+  background: url('/images/about-background-mobile.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: right top;
+}
+.contact {
+  background: url('/images/contact-background-mobile.png');
+  background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: right top;
+}
+.blog {
+  background: url('/images/blog-background-mobile.png');
+  background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: right top;
+}
+*/
+/* header */
+#logo {
+  width: 200px;
+  height: 200px;
+  background-color: #f5e3a5;
+  margin: 10px 0 10px 5%;
+  float: left;
+  border-radius: 999px; }
+  #logo a {
+    width: 200px;
+    height: 200px;
+    display: block; }
+
+header#header {
+  display: block;
+  width: 100%;
+  overflow: hidden; }
+  header#header #navagation {
+    display: block;
+    margin-top: 80px;
+    margin-left: 300px;
+    padding: 0; }
+    header#header #navagation a:first-child {
+      display: none; }
+    header#header #navagation a {
+      padding: 0px 15px 0 30px;
+      font-size: 4em; }
+    header#header #navagation a:hover {
+      text-decoration: underline; }
+    header#header #navagation #blog {
+      padding-left: 5px; }
+
+header#admin {
+  margin-left: 200px;
+  margin-right: 200px; }
+  header#admin nav {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px; }
+    header#admin nav a {
+      padding: 0 5px 0 5px; }
+
+/* Flash Messages */
+.notice {
+  text-align: center; }
+
+/* Title */
+.introduction {
+  margin: 5px 50px 100px 50px; }
+  .introduction h1 {
+    font-size: 6em;
+    text-align: center; }
+  .introduction .description {
+    margin: 0px 50px 20px 50px;
+    font-size: 2em; }
+    .introduction .description p {
+      text-align: center; }
+
+/* Content */
+.content {
+  margin: 50px 50px 5px 50px; }
+  .content h2 {
+    font-size: 4em; }
+  .content p {
+    font-size: 1.75em; }
+
+[class^="proj-"] {
+  margin: 50px 0 75px 0;
+  overflow: hidden; }
+  [class^="proj-"] img {
+    float: left;
+    width: 40%; }
+  [class^="proj-"] .description {
+    margin: 0 0 0 50%;
+    position: relative; }
+    [class^="proj-"] .description p {
+      font-size: 2em;
+      margin: 0 0 25px 0; }
+    [class^="proj-"] .description a {
+      font-size: 1.75em; }
+  [class^="proj-"] .admin-links p:first-child {
+    margin-top: 16px; }
+  [class^="proj-"] .admin-links p {
+    font-size: 1em; }
+
+.about-pic {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 999px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  float: left; }
+
+#about-left {
+  display: block;
+  height: 27vw;
+  margin-bottom: 80px; }
+  #about-left h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    margin-top: 0; }
+  #about-left .about-pic {
+    background-image: url("/images/pigeon-jeremy.jpg"); }
+  #about-left p {
+    padding-left: 300px; }
+
+#about-center {
+  display: inline-block;
+  height: 27vw;
+  margin-bottom: 80px; }
+  #about-center h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    margin-top: 0; }
+  #about-center p {
+    padding-left: 300px; }
+  #about-center .about-pic {
+    background-image: url("/images/developer.png"); }
+
+#about-right {
+  display: inline-block;
+  height: 27vw;
+  margin-bottom: 20px; }
+  #about-right h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    margin-top: 0; }
+  #about-right p {
+    padding-left: 300px; }
+  #about-right .about-pic {
+    background-image: url("/images/designer.jpg"); }
+
+a.about-link {
+  text-decoration: none;
+  border-bottom: 1px dotted #f1f1f1; }
+
+a.about-link:hover {
+  text-decoration: none; }
+
+[class^="blog-"] .blog-content {
+  margin: 0; }
+  [class^="blog-"] .blog-content p {
+    margin: 0;
+    padding: 5px 0 5px 0; }
+[class^="blog-"] > a {
+  /* Comment link */
+  display: none;
+  margin-top: 10px;
+  font-size: 1.25em; }
+[class^="blog-"] .tags p {
+  font-size: 1.25em; }
+
+.pagination {
+  font-size: 1.25em; }
+
+#blog h2 {
+  margin-bottom: 0; }
+
+.blog-date {
+  margin-top: 0;
+  margin-bottom: 30px; }
+
+#contact {
+  margin-left: 27%;
+  margin-right: 27%; }
+  #contact .introduction {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0; }
+    #contact .introduction h1 {
+      margin: 33px 0 0 0; }
+  #contact #email {
+    margin-left: 12px;
+    margin-right: 10px;
+    font-size: 1.5em; }
+    #contact #email form {
+      margin-left: auto;
+      margin-right: auto; }
+      #contact #email form input {
+        width: 100%;
+        display: block;
+        padding: 1px 0 1px 0;
+        font-size: 1.3em; }
+      #contact #email form .field_with_errors {
+        color: red; }
+        #contact #email form .field_with_errors textarea, #contact #email form .field_with_errors input {
+          border: 1px solid red;
+          padding-right: 1px;
+          padding-left: 1px; }
+      #contact #email form textarea {
+        width: 100%;
+        resize: both;
+        font-size: .75em;
+        min-height: 10em;
+        overflow: visible;
+        margin-bottom: 18px;
+        padding: 0; }
+
+footer {
+  margin-top: 80px;
+  opacity: .8;
+  height: 30px;
+  font-size: 1.45em; }
+  footer div {
+    margin-right: 50px;
+    margin-left: 50px;
+    width: 180px; }
+    footer div p {
+      margin: 0 0 10px 0; }
+    footer div :first-child {
+      margin: 0; }
+  footer #footer-left {
+    float: left;
+    width: 300px; }
+  footer #footer-right {
+    float: right;
+    text-align: right; }
+
+#new-blog .text-field {
+  margin: 0 600px 0 0; }
+#new-blog input {
+  width: 400px;
+  font-family: Segoe UI;
+  font-size: 18px; }
+#new-blog textarea {
+  width: 100%;
+  height: 17em;
+  font-family: Segoe UI;
+  font-size: 18px;
+  resize: vertical; }
+#new-blog .submit {
+  margin-top: 20px;
+  width: 100%; }
+
+/* Mobile styles */
+/* Larger mobile styles (wider than 320 pixels) */
+/* Tablet styles (wider than 600 pixels) */
+/* @media only screen and (min-width:600px) {
+} */
+/* Large laptop styles (wider than 1024 pixels) */
+@media only screen and (min-width: 1024px) {
+  /* Universal */
+  body {
+    background-color: white;
+    color: #f1f1f1;
+    margin: 0;
+    text-shadow: 1px 1px 1px #333333;
+    font-size: 14px;
+    font-family: 'josefin_sanssemibold', 'Arial'; }
+
+  a {
+    color: #f1f1f1;
+    text-decoration: none; }
+
+  a:hover {
+    color: #edce60;
+    text-decoration: underline; }
+
+  /* Backgrounds */
+  .home {
+    background: url("/images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right top; }
+
+  .about {
+    background: url("/images/about-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right top; }
+
+  .contact {
+    background: url("/images/contact-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right top; }
+
+  .blog {
+    background: url("/images/blog-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right top; }
+
+  /* header */
+  #logo {
+    width: 140px;
+    height: 140px;
+    margin: 25px 0 25px 15%;
+    background-color: #edce60;
+    opacity: 0.8; }
+    #logo a {
+      width: 140px;
+      height: 140px;
+      display: block; }
+
+  header#header #navagation {
+    float: right;
+    margin: 75px 200px 75px 0px;
+    padding: 0px 0px 10px 300px; }
+    header#header #navagation a:first-child {
+      display: inline; }
+    header#header #navagation a {
+      padding: 0px 5px 5px 5px;
+      font-size: 2em; }
+
+  header#admin {
+    margin-left: 200px;
+    margin-right: 200px; }
+    header#admin nav {
+      margin-left: auto;
+      margin-right: auto;
+      width: 300px; }
+      header#admin nav a {
+        padding: 0 5px 0 5px; }
+
+  /* Flash Messages */
+  .notice {
+    text-align: center; }
+
+  /* Title */
+  .introduction {
+    margin: 5px 200px 100px 200px; }
+    .introduction .description {
+      margin: 0px 100px 20px 100px;
+      font-size: 2em; }
+      .introduction .description p {
+        text-align: center; }
+
+  .home .introduction h1 {
+    font-family: 'Amatic'; }
+
+  /* Content */
+  .content {
+    margin: 50px 15% 5px 15%; }
+
+  [class^="proj-"] p {
+    text-shadow: 1px 1px 1px black; }
+  [class^="proj-"] a {
+    text-decoration: underline; }
+
+  .about-pic {
+    width: 21vw;
+    height: 21vw;
+    border-radius: 999px;
+    margin-left: auto;
+    margin-right: auto; }
+
+  #about-left {
+    float: left;
+    display: inline-block;
+    width: 31%; }
+    #about-left h2 {
+      text-align: center; }
+    #about-left .about-pic {
+      background-image: url("/images/jeremy-outdoor.jpg"); }
+    #about-left p {
+      padding: 0; }
+
+  #about-center {
+    width: 31%;
+    clear: left;
+    margin-left: 3.25%;
+    margin-right: 3.25%;
+    display: inline-block; }
+    #about-center h2 {
+      text-align: center; }
+    #about-center .about-pic {
+      background-image: url("/images/developer.png"); }
+    #about-center p {
+      padding: 0; }
+
+  #about-right {
+    float: right;
+    width: 31%;
+    display: inline-block; }
+    #about-right h2 {
+      text-align: center; }
+    #about-right .about-pic {
+      background-image: url("/images/designer.jpg"); }
+    #about-right p {
+      padding: 0; }
+
+  [class^="blog-"] .blog-content {
+    background-color: rgba(220, 220, 220, 0.7);
+    text-shadow: none;
+    color: #323232;
+    font-weight: 600;
+    display: inline-block;
+    margin: 0; }
+  [class^="blog-"] p {
+    padding: 5px 5px 5px 5px; }
+  [class^="blog-"] .tags {
+    font-size: 1.25em; }
+
+  #blog h2 {
+    margin-bottom: 0; }
+
+  .blog-date {
+    margin-top: 0;
+    margin-bottom: 30px; }
+
+  #contact {
+    margin-left: 37%;
+    margin-right: 37%; }
+
+  .pagination {
+    font-size: 1.5em; }
+
+  footer {
+    margin-top: 80px;
+    opacity: .8;
+    height: 30px;
+    font-size: 1.25em; }
+    footer div {
+      margin-right: 75px;
+      margin-left: 75px;
+      width: 180px;
+      font-size: 1.25em; }
+      footer div p {
+        margin: 0 0 10px 0; }
+        footer div p a {
+          color: white; }
+      footer div :first-child {
+        margin: 0; }
+    footer #footer-left {
+      float: left; }
+    footer #footer-right {
+      float: right;
+      text-align: right; }
+
+  .about footer #footer-left, .contact footer #footer-left {
+    color: #141414;
+    text-shadow: 1px 1px 1px #C5C5C5; }
+
+  #new-blog .text-field {
+    margin: 0 600px 0 0; }
+  #new-blog input {
+    width: 400px;
+    font-family: Segoe UI;
+    font-size: 18px; }
+  #new-blog textarea {
+    width: 100%;
+    height: 17em;
+    font-family: Segoe UI;
+    font-size: 1em;
+    resize: vertical; }
+  #new-blog .submit {
+    margin-top: 20px;
+    width: 100%; } }
+/* Desktop styles (wider than 1140 pixels */
+@font-face {
+  font-family: 'Quicksand';
+  src: url(/assets/quicksand-regular-webfont.eot);
+  src: url(/assets/quicksand-regular-webfont.eot?#iefix) format("embedded-opentype"), url(/assets/quicksand-regular-webfont.woff) format("woff"), url(/assets/quicksand-regular-webfont.ttf) format("truetype"), url(/assets/quicksand-regular-webfont.svg#quicksandregular) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Amatic';
+  src: url(/assets/amaticsc-regular-webfont.eot);
+  src: url(/assets/amaticsc-regular-webfont.eot?#iefix) format("embedded-opentype"), url(/assets/amaticsc-regular-webfont.woff) format("woff"), url(/assets/amaticsc-regular-webfont.ttf) format("truetype"), url(/assets/amaticsc-regular-webfont.svg#amatic_scregular) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Great Vibes';
+  src: url(/assets/greatvibes-regular-webfont.eot);
+  src: url(/assets/greatvibes-regular-webfont.eot?#iefix) format("embedded-opentype"), url(/assets/greatvibes-regular-webfont.woff) format("woff"), url(/assets/greatvibes-regular-webfont.ttf) format("truetype"), url(/assets/greatvibes-regular-webfont.svg#great_vibesregular) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'overpassregular';
+  src: url(/assets/overpass_regular-webfont.eot);
+  src: url(/assets/overpass_regular-webfont.eot?#iefix) format("embedded-opentype"), url(/assets/overpass_regular-webfont.woff) format("woff"), url(/assets/overpass_regular-webfont.ttf) format("truetype"), url(/assets/overpass_regular-webfont.svg#overpassregular) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'caviar_dreamsregular';
+  src: url(/assets/caviardreams-webfont.eot);
+  src: url(/assets/caviardreams-webfont.eot?#iefix) format("embedded-opentype"), url(/assets/caviardreams-webfont.woff) format("woff"), url(/assets/caviardreams-webfont.ttf) format("truetype"), url(/assets/caviardreams-webfont.svg#caviar_dreamsregular) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'josefin_sansregular';
+  src: url("josefinsans-regular-webfont.eot");
+  src: url("josefinsans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("josefinsans-regular-webfont.woff") format("woff"), url("josefinsans-regular-webfont.ttf") format("truetype"), url("josefinsans-regular-webfont.svg#josefin_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'josefin_sanssemibold';
+  src: url("josefinsans-semibold-webfont.eot");
+  src: url("josefinsans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("josefinsans-semibold-webfont.woff") format("woff"), url("josefinsans-semibold-webfont.ttf") format("truetype"), url("josefinsans-semibold-webfont.svg#josefin_sanssemibold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
